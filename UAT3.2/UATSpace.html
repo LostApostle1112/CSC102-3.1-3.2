@@ -1,0 +1,131 @@
+<!-- file creator: James Tramel -->
+<!-- email jamesltramel@gmail.com-->
+<!-- ! alone will pull up a basic quick fill starter page, specify doc type -->
+<!DOCTYPE html>
+<!-- Specify language-->
+<html lang="en">
+<!-- The head deals with the www search bar-->
+
+<head>
+  <!-- refrencing our code to be used-->
+  <script src="sandboxCode.js"></script>
+  <script src="timerCode.js"></script>
+  <script src="crapsCode.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- comments are labled like this in html-->
+  <title>
+
+    James' UATSpace Page
+
+  </title>
+</head>
+ 
+<!-- html comment out the Back story:
+
+  The Texas landscape isn't for the faint of heart, 1903 May 13th. Each month you must   make this run for supplies,the homestead needs it. The spouse will have your head if you muck things up this time. The last trip cost us a horse.
+
+   You stroll into this dusty old town, memories of your last venture here vaugely come to mind. After walking three miles you're looking to quench your thirst and find something to do to ease your mind. Theme from "The good, the bad and the ugly" plays in your head as the casino comes to sight. 
+ 
+  'Hmm, a drink, a game and a room', You mumble to yourself as you head toward the door. The "Casino Saloon" is lively this evening. The aroma of fine whiskey and stale tobacco fill the saloon almost as thick as the chatter. Sam sat in the corner tickling the ivory tipping his bola hat in acknowlegement to your arrival. While the drunkards and others stumble about trying to do, what you can only guess is, dance. 
+  
+  'Open Spot For Craps Over Here!!' a Croupier calls out from the corner. "Why not?" you thought as you grab a drink and head to the craps table in the corner to test your luck.
+
+  Just don't lose your lot this time. The last words you hear before you pull your money out is your spouse saying, "You already lost a horse! What next the farm?" Shaking the thought away you hear yourself say "Roll EM!!"
+-->
+
+<!-- In order to use javascript inline you have to use the script tag-->
+<script>
+//this is a comment for javascript//
+  /*this one is for a multi line comment it will wrap the screen*/
+
+
+ 
+
+
+  
+</script>
+
+<!-- This is where the meat and potatoes of the webpage are located..the body-->
+
+<body>
+
+  <!-- to upload an image-->
+  <img src="UATspaceLogo-2_new.jpg">
+
+  <!-- heading one-->
+  <h1>
+   <em> UAT HOMEWORK PAGE</em>
+
+  </h1>
+
+
+
+  <!-- Use p for paragraph-->
+  <p>
+   UAT Space program countdown.
+  </p>
+
+  <!-- testing two script funtions-->
+  <script>
+    // alert("this is a test of the alert function")
+    document.write("this is a test of the document.write")
+
+  </script>
+  <!--break to drop down a line-->
+  <br>
+  <!-- setting id for countdown timer-->
+  <p id="countDownTimer">Starting countdown here..</p>
+<!-- add a line break-->
+  <br>
+
+  <!-- to add buttons -->
+   <!-- Countdown button-->
+  <button class="button" onclick="countDown3();">Start</button>
+<!-- timer reset button-->
+  <button class="button" onclick="timerReset ();">Reset</button>
+<!-- add a line break-->
+  <br>
+<!-- heading size 1 titling the game-->
+<h1>Welcome to Casino Saloon.</h1>
+<!-- heading size 3 id named crapsResults so it can be refrenced again and will tell us win, lose or push-->
+  <h3 id="crapsResults">Results of the Craps Round</h3>
+<!-- add a line break-->
+  <br>
+<!-- We are still in the same paragraph so I can simply write Die1 is:, add my id,and set the first heading to 'needs to be rolled' -->
+  Die1 is: <div id ="die1Res">Needs to be rolled.</div>
+<!-- add a line break-->
+  <br>
+<!--Same as above so I can write Die2 is:, add my id,and set the first heading to 'needs to be rolled' -->
+  Die2 is: <div id ="die2Res">Needs to be rolled!</div>
+<!-- add a line break-->
+  <br>
+<!--Similar to before but this result will be the sum -->
+  Sum of Die1 and Die2 is: <div id ="sumRes">Needs to be rolled!</div>
+<!-- add a line break-->
+  <br>
+<!--Play craps button -->
+  <button class="lgButton" onclick="playCraps ();">Play craps here!</button>
+  <!-- add a line breaks to fix gradient-->
+  <br>
+  <!-- add a line break-->
+  <br>
+  <!-- add a line break-->
+  <br>
+  <!-- add a line break-->
+  <br>
+
+
+  <div id = "sandboxDisplay">Starting countdown here..</div>
+ <!-- add a line break-->
+  <br>
+<!--Creating a sandbox to test in -->
+<button class="sandboxButtonStart" onclick="startSandbox();">Start</button>
+
+
+<button class="sandboxButtonReset" onclick="resetSandbox();">Reset</button>
+
+
+<!-- close the body-->
+</body>
+<!-- close the html-->
+</html>
